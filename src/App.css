@@ -306,13 +306,19 @@ a {
 }
 
 @media (max-width: 380px) {
-  .page {
-    padding: 12px;
-  }
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px;
+}
 
   .cheese-card {
     padding-inline: 13px;
     border-radius: 26px;
+    margin: 0 auto;
   }
 
   .profile {
