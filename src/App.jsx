@@ -63,13 +63,17 @@ function SocialLink({ label, subtitle, href, icon }) {
 function App() {
   return (
     <main className="page">
-      <div className="cheese-card">
-        <div className="cheese-hole hole-one" />
-        <div className="cheese-hole hole-two" />
-        <div className="cheese-hole hole-three" />
-        <div className="cheese-hole hole-four" />
-        <div className="cheese-hole hole-five" />
-        <div className="cheese-hole hole-six" />
+      <div className="dino-card">
+
+        {/* prehistoric background */}
+        <div className="sun" />
+
+        <div className="mountain mountain-one" />
+        <div className="mountain mountain-two" />
+
+        <div className="plant fern-one">🌿</div>
+        <div className="plant fern-two">🌿</div>
+        <div className="plant leaf-one">🍃</div>
 
         <section className="profile">
           <div className="avatar">
@@ -77,10 +81,15 @@ function App() {
           </div>
 
           <div className="profile-copy">
+            <span className="eyebrow">WELCOME TO MY CORNER OF THE WEB</span>
             <h1>RToCastro</h1>
-            <p>Pick a slice 🧀</p>
+            <p>Herbivore online 🦕🌱</p>
           </div>
         </section>
+
+        <div className="divider">
+          <span>•••</span>
+        </div>
 
         <section className="links">
           {links.map((link) => (
@@ -89,7 +98,14 @@ function App() {
         </section>
 
         <footer className="footer">
-          <span>scan • tap • explore</span>
+          <div className="ground">
+            <span className="dino">🦕</span>
+            <span className="grass">🌱 🌿 🌱</span>
+          </div>
+
+          <span className="footer-copy">
+            TAP • EXPLORE • DON'T GO EXTINCT
+          </span>
         </footer>
       </div>
     </main>
