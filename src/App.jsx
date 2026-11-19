@@ -60,51 +60,41 @@ function SocialLink({ label, subtitle, href, icon }) {
   )
 }
 
+
 function App() {
   return (
     <main className="page">
-      <div className="dino-card">
-
-        {/* prehistoric background */}
-        <div className="sun" />
-
-        <div className="mountain mountain-one" />
-        <div className="mountain mountain-two" />
-
-        <div className="plant fern-one">🌿</div>
-        <div className="plant fern-two">🌿</div>
-        <div className="plant leaf-one">🍃</div>
+      <div className="chip-card">
+        <div className="chip-texture" aria-hidden="true" />
 
         <section className="profile">
           <div className="avatar">
-            <img src={profileImage} alt="RToCastro" />
+            <img src={profileImage} alt="RToCastro avatar" />
           </div>
 
           <div className="profile-copy">
-            <span className="eyebrow">WELCOME TO MY CORNER OF THE WEB</span>
+            <span className="eyebrow">FRESH FROM THE INTERNET</span>
             <h1>RToCastro</h1>
-            <p>Herbivore online 🦕🌱</p>
+            <p>Just chippin' away 🥔</p>
           </div>
         </section>
 
-        <div className="divider">
-          <span>•••</span>
+        <div className="divider" aria-hidden="true">
+          <span>✦ ✦ ✦</span>
         </div>
 
-        <section className="links">
+        <nav className="links" aria-label="Social links">
           {links.map((link) => (
             <SocialLink key={link.label} {...link} />
           ))}
-        </section>
+        </nav>
 
         <footer className="footer">
-          <div className="ground">
-            <span className="dino">🦕</span>
-            <span className="grass">🌱 🌿 🌱</span>
-          </div>
-
           <span className="footer-copy">
-            TAP • EXPLORE • DON'T GO EXTINCT
+            FRESH LINKS • EXTRA CRUNCH
+          </span>
+          <span className="footer-potato" aria-hidden="true">
+            🥔
           </span>
         </footer>
       </div>
